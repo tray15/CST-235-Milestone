@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3c//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Login</title>
+</head>
+<body>
+	<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="content">
+			<h:form styleClass="loginform">
+				<h3>Login</h3>
+				
+				<div id ="login">
+					<h:outputText styleClass="content-text" value="Username: " />
+					<h:inputText styleClass="content-fields" id="username" value="#{user.username}" />
+					<h:message for="username" styleClass="errormessages" /><br />
+				</div>
+				<div id="login">
+					<h:outputText styleClass="content-text" value="Password: " />
+					<h:inputText styleClass="content-fields" id="password" value="#{user.password}" />
+					<h:message for="password" styleClass="errormessages" /><br />
+					<a>New user? </a><h:link value="Register here." outcome="Register.xhtml" /><br /><br />
+				</div>
+				<h:commandButton action="#{loginController.onSubmit(user)}" value="Submit" styleClass="contentButton" />
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

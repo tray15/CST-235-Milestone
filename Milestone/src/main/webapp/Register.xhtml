@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3c//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Register</title>
+</head>
+<body>
+	<ui:composition template="/layouts/commonLayout.xhtml">
+		<ui:define name="content">
+			<h:form styleClass="registerForm">
+				<h3>Register</h3>
+				<div id="register">
+					<h:outputText styleClass="content-text" value="First name: " />
+					<h:inputText styleClass="content-fields" id="firstName" value="#{user.firstName}" />
+					<h:message for="firstName" styleClass="errormessages" /><br />
+				</div>
+				<div id="register">
+					<h:outputText styleClass="content-text" value="Last name: " />
+					<h:inputText styleClass="content-fields" id="lastName" value="#{user.lastName}" />
+					<h:message for="lastName" styleClass="errormessages" /><br />
+				</div>
+					<h:outputText styleClass="content-text" value="Email: " />
+					<h:inputText styleClass="content-fields" id="email" value="#{user.email}" />
+					<h:message for="email" styleClass="errormessages" /><br />
+				<div id="register">
+					<h:outputText styleClass="content-text" value="Phone Number: " />
+					<h:inputText styleClass="content-fields" id="phoneNumber" value="#{user.phoneNumber}" />
+					<h:message for="phoneNumber" styleClass="errormessages" /><br />
+				</div>
+				<div id="register">
+					<h:outputText styleClass="content-text" value="Username: " />
+					<h:inputText styleClass="content-fields" id="username" value="#{user.username}" />
+					<h:message for="username" styleClass="errormessages" /><br />
+				</div>
+				<div id="register">
+					<h:outputText styleClass="content-text" value="Password: " />
+					<h:inputText styleClass="content-fields" id="password" value="#{user.password}" />
+					<h:message for="password" styleClass="errormessages" /><br />
+					<a>Existing user? </a><h:link value="Login here." outcome="Login.xhtml" /><br /><br />
+				</div>
+				<h:commandButton action="#{registerController.onSubmit(user)}" value="Submit" styleClass="contentButton" />
+			</h:form>
+			
+		</ui:define>
+	</ui:composition>
+</body>
+</html>
+

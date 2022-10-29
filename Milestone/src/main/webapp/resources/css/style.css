@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+/*
+	Global styling
+*/
+body {
+	background: #424549;
+	color: white;
+}
+a:link {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+/*
+	Header
+*/
+
+h1 {
+	background: #282b30;
+	text-align: center;
+	border: 1px solid white;
+	padding: 25px;
+	margin-bottom: -15px;
+}
+
+/*
+	Navbar styling
+*/
+.navbar {
+	background: #282b30;
+	margin-bottom: 20px;
+}
+.navbar ul {
+	list-style: non;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+.navbar li {
+	display: inline;
+	margin: auto;
+}
+.nav-button {
+	border-radius: 25px;
+	background: #424549;
+	border: 0px;
+	padding: 10px 20px;
+	color: white;
+}
+
+/*
+	Content styling
+*/
+#content {
+	max-width: 100%;
+	margin: auto;
+	border: 3px solid white;
+	border-radius: 25px;
+	padding: 20px;
+	background: #f2476a;
+	display: block;
+	text-align: center;
+}
+#content h3 {
+	text-align: center;
+}
+.contentButton {
+	border-radius: 25px;
+	background: #424549;
+	border: 0px;
+	padding: 10px 20px;
+	color: white;
+	margin: auto;
+	display: block;
+}
+.content-text {
+	text-align: center;
+	display: block;
+}
+.content-fields {
+	margin: auto;
+	display: block;
+}
+ 
+ /*
+ 	Footer
+ */
+ h5 {
+	text-align: center; 
+	border-top: 1px solid white;
+	padding: 25px;
+	background: #282b30;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+ }
+ 
+ /*
+ 	Error messages
+ */
+ .errormessages {
+ 	color: #624F82;
+ 	display: block;
+ 	text-align: center;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
