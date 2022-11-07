@@ -9,6 +9,16 @@ import javax.faces.context.FacesContext;
 import beans.User;
 import beans.RegisterAndLoginAuthentication;
 
+/*
+ * @author Tanner Ray
+ * 
+ * @RegisterController class that handles register.xhtml page
+ * 
+ * @onSubmit - method that handles button press on register page
+ * takes in user model credentials given and validates that they
+ * fit the given restraints
+ */
+
 @ManagedBean(name="registerController")
 @ApplicationScoped
 public class RegisterController {

@@ -9,6 +9,12 @@ import javax.faces.application.FacesMessage;
 import beans.RegisterAndLoginAuthentication;
 import beans.User;
 
+/*
+ * @author Tanner Ray
+ * LoginController bean
+ * @onSubmit - handles button press on login.xhtml form
+ * attempts to login user with given credentials
+ */
 @ManagedBean
 @ViewScoped
 public class LoginController {

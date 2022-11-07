@@ -6,6 +6,22 @@ import java.util.List;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 
+/*
+ * @author Tanner Ray
+ * @RegisterAndLoginAuthentication
+ * 
+ * this class handles registration and login authentication
+ * this class is also a pseudo database for the time being and will
+ * be converted to jdbc at a later time.
+ * 
+ * @RegisterAndLoginAuthentication method initializes a list of users
+ * this bean can be injected to other views 
+ * 
+ * @authenticateuser method for registration it will verify that a user does
+ * not already exist in the list of users. For the login form it will verify
+ * that the user credentials being used are in the list
+ */
+
 @ManagedBean(name="auth")
 @ApplicationScoped
 public class RegisterAndLoginAuthentication {
