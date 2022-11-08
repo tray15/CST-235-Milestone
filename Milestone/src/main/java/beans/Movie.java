@@ -1,5 +1,10 @@
 package beans;
 
+
+/*
+ * @author Tanner Ray
+ * Movie model class
+ */
 public class Movie {
 	private int id;
 	private String name;

@@ -1,8 +1,16 @@
 package beans;
 
 import javax.faces.bean.ManagedBean;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+/*
+ * @author Tanner Ray
+ * 
+ * User model class
+ * 
+ */
 
 @ManagedBean
 public class User {
